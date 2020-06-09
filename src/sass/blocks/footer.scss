@@ -1,0 +1,168 @@
+  .footer__wrapper {
+    display: flex;
+    flex-direction:column;
+
+  }
+
+  .footer__top {
+    display: flex;
+    justify-content: space-between;
+  border-bottom: 2px solid #2F2F2F;
+
+  }
+
+  .footer__logo-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 384px;
+
+    & p {
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  /* or 157% */
+
+  color: #9A9A9A;
+
+
+    }
+  }
+
+  .footer__menu {
+    display: flex;
+    flex-direction: column;
+    & ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      & li {
+        margin-bottom: 16px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        & a {
+          text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #8E827F;
+
+
+        }
+      }
+
+    }
+  }
+
+  .footer__contacts {
+    display: flex;
+    flex-direction: column;
+    & a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height */
+
+  color: #FFFFFF;
+
+    }
+    & .footer__mail {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #F5850A;
+
+
+    }
+    & p {
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #FFFFFF;
+
+
+    }
+  }
+
+  .footer__bottom {
+    & span {
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #8E827F;
+    }
+    & a {
+  text-decoration: none;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  color: #F5850A;
+  box-sizing: border-box;
+
+    }
+  }
+
+  @media (max-width: 960px) {
+    .footer__logo-container {
+      & img {
+        width: 90%;
+        height: auto;
+      }
+    }
+    .footer__bottom {
+      width: 300px;
+      margin: 0 auto;
+        & span {
+          font-size: 10px;
+          line-height: 120%;
+        }
+        & a {
+          font-size: 10px;
+          line-height: 120%;
+        }
+    }
+    .footer__top {
+      max-width: 300px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: center;
+    border-bottom: 2px solid #2F2F2F;
+    }
+
+    .footer__menu {
+      width: 300px;
+
+    }
+
+    .footer__contacts {
+      width: 100%;
+        & p {
+          font-size: 14px;
+          line-height: 120%;
+        }
+    }
+  }
