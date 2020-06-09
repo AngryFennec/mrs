@@ -4,8 +4,7 @@
   padding-bottom: 5px;
 
   & .wrapper {
-    display: flex;
-    align-items: center;
+
   }
 
   & ul {
@@ -17,12 +16,25 @@
 }
 
 .header__top {
+
+
+
   & .wrapper {
+    padding-top: 17px;
+    padding-bottom: 20px;
     display: flex;
     justify-content: space-between;
+      border-bottom: 1px solid #2F2F2F;
   }
 
   & ul {
+    margin-left: 30%;
+    & li {
+      margin-right: 30px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
     & a {
       text-decoration: none;
       font-style: normal;
@@ -43,6 +55,18 @@
   line-height: 17px;
   /* identical to box height */
   color: #FFFFFF;
+  margin-right: 28px;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    background: url("../img/write.svg") no-repeat;
+    width: 28px;
+    height: 28px;
+    top: -7px;
+    left: -30px;
+
+  }
 }
 
 .header__price {
@@ -68,13 +92,26 @@
   border-radius: 100px;
   padding-left: 20px;
   padding-right: 20px;
+  margin-right: 12px;
 }
 
-.header {
-  &__bottom {
+
+
+.header__bottom {
+  & .wrapper {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
     & nav {
       display: flex;
       align-items: center;
+      & li {
+        margin-right: 22px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
 
       & a {
         font-style: normal;
@@ -97,7 +134,7 @@
     }
   }
 
-  & .header__burger {
+   .header__burger {
     display: none;
     background: transparent;
     border: none;
@@ -107,19 +144,15 @@
     position: absolute;
     z-index: 4;
   }
-}
-@media(max-width: 1150px) {
-  .header__bottom {
-    & nav {
-      & a {
-        margin-right: 15px;
-      }
-    }
 
-    & .header__cart {
-      margin-left: 14px;
+@media(max-width: 1150px) {
+.header__top {
+  & .wrapper {
+    & ul {
+      margin-left: 20%;
     }
   }
+}
 }
 @media(max-width: 1024px) {
   .header__top {
