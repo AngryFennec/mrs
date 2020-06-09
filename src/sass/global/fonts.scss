@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local("Golos Text"),
+    url("../font/Golostextregular.woff2") format("woff2"),
+    url("../font/Golostextregular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src:
+    local("Golos Text"),
+    url("../font/Golostextmedium.woff2") format("woff2"),
+    url("../font/Golostextmedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src:
+    local("Golos Text"),
+    url("../font/Golostextdemibold.woff2") format("woff2"),
+    url("../font/Golostextdemibold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src:
+    local("Golos Text"),
+    url("../font/Golostextbold.woff2") format("woff2"),
+    url("../font/Golostextbold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src:
+    local("Golos Text"),
+    url("../font/Golostextblack.woff2") format("woff2"),
+    url("../font/Golostextblack.woff") format("woff");
+}
