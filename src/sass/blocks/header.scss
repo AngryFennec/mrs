@@ -157,6 +157,9 @@
 }
 }
 @media(max-width: 1024px) {
+  .header {
+      padding-bottom: 20px;
+  }
   .header__top {
     display: none;
     position: absolute;
@@ -168,6 +171,7 @@
 
 & .wrapper {
   padding-left: 0;
+
     & ul {
       position: absolute;
       top: 305px;

@@ -5,4 +5,5 @@
 
 //= vendor/picturefill.js
 //= vendor/swiper.js
+//= vendor/inputmask.js
 //= vendor/jquery-3.4.1.min.js
