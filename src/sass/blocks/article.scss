@@ -1,0 +1,82 @@
+.article {
+
+table {
+    margin-top: 60px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    margin-bottom: 60px;
+
+    & thead {
+      background: transparent;
+    }
+
+    tr {
+      background: #F7F7F7;
+border-radius: 4px;
+    margin-bottom: 10px;
+
+    }
+
+
+    th {
+
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      /* identical to box height, or 143% */
+
+      color: #2F2F2F;
+background: transparent;
+padding-top: 21px;
+padding-bottom: 22px;
+
+    }
+
+    td {
+
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      padding-top: 21px;
+      padding-bottom: 22px;
+      color: #2F2F2F;
+      background: #F7F7F7;
+
+    }
+}
+
+
+}
+
+
+@media (max-width: 1050px) {
+.article {
+table td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  table thead {
+    display: none;
+  }
+
+  table tr {
+    margin-bottom: 10px;
+    display: block;
+    border-bottom: 2px solid #ddd;
+  }
+
+  table td {
+    display: block;
+    text-align: right;
+    font-size: 13px;
+    border-bottom: 1px dotted #ccc;
+  }
+}
+}
