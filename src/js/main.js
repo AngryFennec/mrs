@@ -5,3 +5,4 @@
 
 //= modules/menu.js
 //= modules/popup.js
+//= modules/aside.js

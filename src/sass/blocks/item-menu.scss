@@ -1,0 +1,124 @@
+aside.item-menu {
+  max-width: 287px;
+  width: 100%;
+  background: transparent;
+  height: auto;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: none;
+
+& a {
+  cursor: auto;
+}
+  & a:hover {
+    opacity: 1;
+
+  }
+  & span {
+    transition: 0.2s;
+    cursor: pointer;
+  }
+
+  & span:hover {
+    color: #F5850A;
+    border-bottom: 1px solid #F5850A;
+    transition: 0.2s;
+  }
+
+  & ul {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: auto;
+  }
+
+  & li {
+    & .item-menu__sublist {
+      display: none;
+      margin-left: 15px;
+
+      & li {
+        border: none;
+
+        & a {
+          font-size: 14px;
+          line-height: 17px;
+          padding: 10px 20px;
+          display: block;
+
+          & span {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            border-bottom: 1px solid #ffffff;
+            position: relative;
+            color: #FFFFFF;
+
+            &::after {
+              content: none;
+            }
+            &:hover {
+              color: #F5850A;
+              border-bottom: 1px solid #F5850A;
+              transition: 0.2s;
+            }
+          }
+        }
+      }
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    & a {
+      text-decoration: none;
+      display: block;
+      padding: 20px 40px 19px 20px;
+      position: relative;
+
+      & span {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        border-bottom: 1px solid #ffffff;
+        position: relative;
+        color: #FFFFFF;
+
+        &::after {
+          content: "";
+          position: absolute;
+          background: url("../img/arrow-right.svg") no-repeat 0 0;
+          width: 7px;
+          height: 12px;
+          top: calc(50% - 3px);
+          right: -30px;
+        }
+      }
+
+      &.non-arrow {
+        & span::after {
+          content: none;
+        }
+      }
+
+      &.opened {
+        & span::after {
+          transform: rotateZ(90deg);
+        }
+
+        &.non-arrow {
+          & span::after {
+            content: none;
+          }
+        }
+      }
+    }
+  }
+}

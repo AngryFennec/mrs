@@ -1,41 +1,54 @@
-.article {
+.article__wrapper {
+  width: 100%;
+  padding-left: 7%;
+  padding-right: 14%;
+  box-sizing: border-box;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
 
-table {
-    margin-top: 60px;
-    border-collapse: collapse;
-    border-spacing: 0;
+.article {
+  max-width: 901px;
+  width: 76.5%;
+  background: #ffffff;
+  box-sizing: border-box;
+
+  table {
+    margin-top: 10px;
+    border-spacing: 0 5px;
     width: 100%;
-    margin-bottom: 60px;
+    max-width: 709px;
+    margin-bottom: 35px;
 
     & thead {
       background: transparent;
     }
 
-    tr {
+    & tr {
       background: #F7F7F7;
-border-radius: 4px;
-    margin-bottom: 10px;
-
+      border-radius: 4px;
+      height: 60px;
+    }
+    & thead tr {
+      height: 40px;
     }
 
-
-    th {
-
+    & th {
       font-style: normal;
       font-weight: 500;
       font-size: 14px;
       line-height: 20px;
       /* identical to box height, or 143% */
-
       color: #2F2F2F;
-background: transparent;
-padding-top: 21px;
-padding-bottom: 22px;
+      background: #ffffff;
+      padding-top: 7px;
+padding-bottom: 0px;
 
+      box-sizing: border-box;
+      text-align: center;
     }
 
-    td {
-
+    & td {
       font-style: normal;
       font-weight: normal;
       font-size: 14px;
@@ -44,39 +57,141 @@ padding-bottom: 22px;
       padding-bottom: 22px;
       color: #2F2F2F;
       background: #F7F7F7;
-
+      text-align: center;
     }
-}
+  }
 
+  & h2 {
+    max-width: 447px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #1A1A1B;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
 
-}
-
-
-@media (max-width: 1050px) {
-.article {
-table td:before {
-    content: attr(data-label);
-    float: left;
-    font-weight: bold;
+  & p {
+    font-style: normal;
+    font-weight: normal;
     font-size: 16px;
     line-height: 22px;
-  }
-
-  table thead {
-    display: none;
-  }
-
-  table tr {
+    color: #000000;
+    max-width: 666px;
     margin-bottom: 10px;
-    display: block;
-    border-bottom: 2px solid #ddd;
   }
 
-  table td {
-    display: block;
-    text-align: right;
-    font-size: 13px;
-    border-bottom: 1px dotted #ccc;
+  & h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+    color: #1A1A1B;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  & ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    padding-top: 5px;
+    margin-left: 35px;
+    padding-bottom: 3px;
+
+    & li {
+      position: relative;
+      margin-bottom: 7px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 22px;
+      /* identical to box height, or 137% */
+
+      color: #000000;
+
+      &::before {
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background: #F5850A;
+        position: absolute;
+        content: "";
+        top: 8px;
+        left: -20px;
+      }
+    }
+  }
+
+  & ol {
+    counter-reset: item;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 5px;
+    margin-left: 35px;
+    padding-bottom: 3px;
+
+    & li {
+      position: relative;
+      margin-bottom: 7px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height, or 137% */
+
+  color: #000000;
+
+
+      &::before {
+        content: "";
+        position: absolute;
+        content: counter(item) ". ";
+
+        font-style: normal;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 22px;
+        /* identical to box height, or 137% */
+
+        color: #000000;
+
+
+        counter-increment: item;
+        top: 2px;
+        left: -20px;
+      }
+    }
   }
 }
+@media (max-width: 1050px) {
+  .article {
+    table td:before {
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    table thead {
+      display: none;
+    }
+
+    table tr {
+      margin-bottom: 10px;
+      display: block;
+      border-bottom: 2px solid #ddd;
+    }
+
+    table td {
+      display: block;
+      text-align: right;
+      font-size: 13px;
+      border-bottom: 1px dotted #ccc;
+    }
+  }
 }
