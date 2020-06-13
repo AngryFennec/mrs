@@ -1,0 +1,220 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1A1A1B;
+  font-family: 'Golos Text', sans-serif;
+}
+
+.vendor-info {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  min-height: 521px;
+}
+
+.vendor-info::after {
+  position: absolute;
+  left: 47.7%;
+  bottom: 0;
+  display: block;
+  content: '';
+  width: 27%;
+  height: 100%;
+  background-image: url("../img/steel-pipe.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: left bottom;
+}
+
+.vendor-info__target {
+  width: 65%;
+  padding-left: 70px;
+  padding-bottom: 0;
+  background-color: #f5850A;
+  color: #ffffff;
+}
+
+.vendor-info__target b {
+  display: block;
+  margin-top: 30px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.vendor-info__target h1 {
+  max-width: 540px;
+  font-size: 60px;
+  line-height: 55px;
+  margin: 90px 0 0;
+  font-weight: 900;
+}
+
+.vendor-info__target p {
+  width: 347px;
+  margin-top: 30px;
+  margin-bottom: 35px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.vendor-info__target a {
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.vendor-info__target a::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff;
+}
+
+.vendor-info__advantage {
+  box-sizing: border-box;
+  width: 33%;
+  padding-left: 56px;
+  background-color: #ffffff;
+}
+
+.vendor-info__advantage ul {
+  margin: 60px 0 0;
+  padding: 0;
+  color: #757575;
+  list-style: none;
+}
+
+.vendor-info__advantage li {
+  margin-top: 30px;
+}
+
+.vendor-info__advantage li:last-of-type {
+  margin-bottom: 37px;
+}
+
+.vendor-info__advantage li:first-of-type {
+  width: 258px;
+}
+
+.vendor-info__advantage li:nth-of-type(2) {
+  width: 179px;
+}
+
+.vendor-info__advantage li:last-of-type {
+  width: 185px;
+}
+
+.vendor-info__advantage li b {
+  display: block;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.vendor-info__advantage li p {
+  margin: 11px 0 0;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.vendor-info__advantage li:last-of-type p {
+  margin-top: 15px;
+}
+
+.vendor-info__advantage a {
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.04em;
+  color: #757575;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.vendor-info__advantage a::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: #757575;
+}
+@media (max-width: 1024px) {
+  .vendor-info__wrapper {
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .vendor-info {
+    max-width: 100%;
+    //flex-direction: column;
+  }
+
+  .vendor-info::after {
+    display: none;
+  }
+
+  .vendor-info__target {
+    width: 100%;
+    padding-bottom: 59px;
+    padding-left: 0;
+  }
+
+  .vendor-info__target h1 {
+    font-size: 40px;
+    line-height: 38px;
+    max-width: 300px;
+  }
+
+  .vendor-info__target p {
+    width: 90%;
+  }
+
+  .vendor-info__advantage {
+    width: 100%;
+    padding-left: 0;
+    padding-bottom: 59px;
+  }
+}
+@media (max-width: 900px) {
+  .vendor-info__target h1 {
+    font-size: 24px;
+    line-height: 120%;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .vendor-info {
+    flex-direction: column;
+  }
+
+  .vendor-info__advantage li:last-of-type {
+    margin-bottom: 37px;
+  }
+
+  .vendor-info__advantage li:first-of-type {
+    width: 90%;
+  }
+
+  .vendor-info__advantage li:nth-of-type(2) {
+    width: 90%;
+  }
+
+  .vendor-info__advantage li:last-of-type {
+    width: 90%;
+  }
+}

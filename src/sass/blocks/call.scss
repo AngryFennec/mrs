@@ -1,13 +1,13 @@
 .call__container {
 	background: url("../img/call.png") no-repeat #F5850A;
-	background-position: 95.5% 0%;
+	background-position: 95.5% 0;
 	box-sizing: border-box;
 	max-width: 901px;
-		padding-left: 5%;
-		width: 100%;
-			padding-right: 20px;
-			box-sizing: border-box;
-	}
+	padding-left: 5%;
+	width: 100%;
+	padding-right: 20px;
+	box-sizing: border-box;
+}
 
 .call__left {
 	max-width: 287px;
@@ -18,11 +18,10 @@
 	display: flex;
 }
 
-
 .call {
 	width: 100%;
-
 	padding-bottom: 15px;
+
 	& h2 {
 		padding-top: 42px;
 		padding-bottom: 6px;
@@ -50,18 +49,14 @@
 .call__input {
 	width: 240px;
 	height: 54px;
-
 	padding-left: 24px;
-
 	margin-right: 10px;
 	margin-bottom: 0;
-
 	background: transparent;
-
 	border: 1px solid #FFFFFF;
 	box-sizing: border-box;
 	border-radius: 100px;
-margin-bottom: 20px;
+	margin-bottom: 20px;
 	color: #FFFFFF;
 
 	&::placeholder {
@@ -71,12 +66,11 @@ margin-bottom: 20px;
 
 .call__btn {
 	box-sizing: border-box;
-    display: block;
+	display: block;
 	width: 240px;
 	height: 54px;
 	border-radius: 100px;
 	background-color: #FFFFFF;
-
 	text-decoration: none;
 	color: #F5850A;
 	text-transform: uppercase;
@@ -85,7 +79,6 @@ margin-bottom: 20px;
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 17px;
-
 	padding-top: 18px;
 }
 
@@ -93,37 +86,35 @@ margin-bottom: 20px;
 	align-self: end;
 	display: flex;
 	flex-direction: column;
-		padding-top: 85px;
+	padding-top: 85px;
 	font-style: normal;
 	line-height: 18px;
 	font-size: 12px;
 	padding-left: 5px;
+
 	& p {
 		font-weight: normal;
 		color: #FFFFFF;
 		padding-bottom: 6px;
-		margin: 0px;
+		margin: 0;
 	}
+
 	& a {
 		text-decoration: none;
 		font-weight: bold;
 		color: #FFFFFF;
-
 	}
 }
-
 @media (max-width: 1150px) {
 	.call__container {
-		background:#F5850A;
+		background: #F5850A;
 	}
+
 	.call__policy {
 		padding-top: 0;
 	}
 }
-
-
 @media (max-width: 900px) {
-
 	.call__left {
 		display: none;
 	}
@@ -132,9 +123,7 @@ margin-bottom: 20px;
 		padding-bottom: 20px;
 	}
 
-
 	.call {
-
 		& h2 {
 			text-align: center;
 			padding-top: 14px;
@@ -147,12 +136,12 @@ margin-bottom: 20px;
 		width: 100%;
 		flex-direction: column;
 		align-items: center;
-		padding-bottom: 0px;
+		padding-bottom: 0;
 		margin-top: 30px;
 	}
 
 	.call__input {
-		margin-right: 0px;
+		margin-right: 0;
 		width: 100%;
 	}
 
@@ -161,7 +150,6 @@ margin-bottom: 20px;
 	}
 
 	.call__policy {
-
 		margin-top: 10px;
 		align-self: center;
 	}

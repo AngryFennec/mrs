@@ -3,9 +3,7 @@
   position: relative;
   padding-bottom: 5px;
 
-  & .wrapper {
-
-  }
+  & .wrapper {}
 
   & ul {
     display: flex;
@@ -16,25 +14,25 @@
 }
 
 .header__top {
-
-
-
   & .wrapper {
     padding-top: 17px;
     padding-bottom: 15px;
     display: flex;
     justify-content: space-between;
-      border-bottom: 1px solid #2F2F2F;
+    border-bottom: 1px solid #2F2F2F;
   }
 
   & ul {
     margin-left: 30%;
+
     & li {
       margin-right: 30px;
+
       &:last-child {
         margin-right: 0;
       }
     }
+
     & a {
       text-decoration: none;
       font-style: normal;
@@ -57,6 +55,7 @@
   color: #FFFFFF;
   margin-right: 28px;
   position: relative;
+
   &::before {
     position: absolute;
     content: "";
@@ -65,7 +64,6 @@
     height: 28px;
     top: -7px;
     left: -30px;
-
   }
 }
 
@@ -74,7 +72,8 @@
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 17px; /* identical to box height */
+  line-height: 17px;
+  /* identical to box height */
   display: flex;
   align-items: flex-end;
   text-align: center;
@@ -96,8 +95,6 @@
   margin-top: 2px;
 }
 
-
-
 .header__bottom {
   & .wrapper {
     padding-top: 20px;
@@ -105,61 +102,64 @@
     display: flex;
     justify-content: space-between;
   }
-    & nav {
-      display: flex;
-      align-items: center;
-      & li {
-        margin-right: 22px;
-        &:last-child {
-          margin-right: 0;
-        }
-      }
 
-      & a {
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 17px;
-        /* identical to box height */
-        display: flex;
-        align-items: flex-end;
-        text-align: center;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-        text-decoration: none;
-        color: #FFFFFF;
-      }
+  & nav {
+    display: flex;
+    align-items: center;
 
-      & .header__active a {
-        color: #F5850A;
+    & li {
+      margin-right: 22px;
+
+      &:last-child {
+        margin-right: 0;
       }
     }
-  }
 
-   .header__burger {
-    display: none;
-    background: transparent;
-    border: none;
-    padding: 0;
-    top: 40px;
-    right: 20px;
-    position: absolute;
-    z-index: 4;
-  }
+    & a {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      /* identical to box height */
+      display: flex;
+      align-items: flex-end;
+      text-align: center;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #FFFFFF;
+    }
 
-@media(max-width: 1150px) {
-.header__top {
-  & .wrapper {
-    & ul {
-      margin-left: 20%;
+    & .header__active a {
+      color: #F5850A;
     }
   }
 }
+
+.header__burger {
+  display: none;
+  background: transparent;
+  border: none;
+  padding: 0;
+  top: 40px;
+  right: 20px;
+  position: absolute;
+  z-index: 4;
+}
+@media(max-width: 1150px) {
+  .header__top {
+    & .wrapper {
+      & ul {
+        margin-left: 20%;
+      }
+    }
+  }
 }
 @media(max-width: 1024px) {
   .header {
-      padding-bottom: 30px;
+    padding-bottom: 30px;
   }
+
   .header__top {
     display: none;
     position: absolute;
@@ -169,33 +169,33 @@
     z-index: 6;
     border-bottom: none;
 
-& .wrapper {
-  padding-left: 0;
+    & .wrapper {
+      padding-left: 0;
 
-    & ul {
-      position: absolute;
-      top: 305px;
-      left: 5px;
-      display: flex;
-      flex-direction: column;
-      margin-left: 0;
-      & li {
-        margin-right: 0;
-        margin-bottom: 20px;
+      & ul {
+        position: absolute;
+        top: 305px;
+        left: 5px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+
+        & li {
+          margin-right: 0;
+          margin-bottom: 20px;
+        }
       }
     }
   }
-}
+
   .header__write {
     position: absolute;
     top: 240px;
     left: 20px;
-
   }
 
   .header__logo {
     margin-top: 10px;
-
 
     & img {
       width: 62px;
@@ -241,10 +241,10 @@
     & ul {
       flex-direction: column;
       align-items: flex-start;
+
       & li {
         margin-bottom: 10px;
       }
-
     }
   }
 
