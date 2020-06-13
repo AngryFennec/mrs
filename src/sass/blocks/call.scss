@@ -1,0 +1,139 @@
+.call__wrapper {
+	background: url("../img/call.png") no-repeat #F5850A;
+	background-position: 95.5% 0%;
+	box-sizing: border-box;
+
+	&.wrapper {
+		max-width: 1200px;
+		padding-left: 7%;
+	}
+}
+
+
+.call {
+	width: 100%;
+	max-width: 901px;
+	& h2 {
+		padding-top: 42px;
+		padding-bottom: 6px;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 30px;
+		line-height: 36px;
+		color: #FFFFFF;
+	}
+}
+
+.call__form {
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 37px;
+}
+
+.call__form-items {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 510px; 
+}
+
+.call__input {
+	width: 240px;
+	height: 54px;
+
+	padding-left: 24px;
+
+	margin-right: 10px;
+	margin-bottom: 23px;
+
+	background: #F5850A;
+
+	border: 1px solid #FFFFFF;
+	box-sizing: border-box;
+	border-radius: 100px;
+
+	color: #FFFFFF;
+
+	&::placeholder {
+		color: #FFC585;
+	}
+}
+
+.call__btn {
+	box-sizing: border-box;
+    display: block;
+	width: 240px;
+	height: 54px;
+	border-radius: 100px;
+	background-color: #FFFFFF;
+
+	text-decoration: none;
+	color: #F5850A;
+	text-transform: uppercase;
+	text-align: center;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+
+	padding-top: 18px;
+}
+
+.call__policy {
+	align-self: end;
+	display: flex;
+	flex-direction: column;
+
+	font-style: normal;
+	line-height: 18px;
+	font-size: 12px;
+	margin-bottom: 26px;
+	padding-left: 5px;
+	& p {
+		font-weight: normal;
+		color: #FFFFFF;
+		padding-bottom: 6px;
+		margin: 0px;
+	}
+	& a {
+		text-decoration: none;
+		font-weight: bold;
+		color: #FFFFFF;
+		
+	}
+}
+
+@media (max-width: 900px) {
+	.call__wrapper {
+		background: #F5850A;
+	}
+
+	.call {
+		& h2 {
+			text-align: center;
+			padding-top: 14px;
+			padding-bottom: 10px;
+		}
+	}
+
+	.call__form {
+		justify-content: center;
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+		padding-bottom: 0px;
+	}
+
+	.call__input {
+		margin-right: 0px;
+		width: 100%;
+	}
+
+	.call__btn {
+		width: 100%;
+	}
+
+	.call__policy {
+		margin-top: 10px;
+		align-self: center;
+	}
+}
