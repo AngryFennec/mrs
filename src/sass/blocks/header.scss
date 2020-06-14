@@ -2,8 +2,12 @@
   width: 100%;
   position: relative;
   padding-bottom: 5px;
+  max-width: 1920px;
+  margin: 0 auto;
 
-  & .wrapper {}
+  & .wrapper {
+
+  }
 
   & ul {
     display: flex;
