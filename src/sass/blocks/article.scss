@@ -40,7 +40,7 @@
     border-spacing: 0 5px;
     width: 100%;
     max-width: 709px;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 
     & thead {
       background: transparent;
@@ -67,19 +67,38 @@
       padding-top: 7px;
       padding-bottom: 0;
       box-sizing: border-box;
-      text-align: center;
+      text-align: left;
+      padding-left: 4%;
+      padding-right: 4%;
+
+      &:nth-child(2) {
+        width: 17%;
+      }
+      &:nth-child(3) {
+        width: 23%;
+      }
+      &:nth-child(4) {
+        //width: 33%;
+        width: 25%;
+      }
+      &:nth-child(5) {
+        width: 25%;
+
+      }
     }
 
     & td {
+      padding-left: 4%;
+      padding-right: 4%;
       font-style: normal;
       font-weight: normal;
       font-size: 14px;
       line-height: 17px;
-      padding-top: 21px;
-      padding-bottom: 22px;
+      padding-top: 25px;
+      padding-bottom: 20px;
       color: #2F2F2F;
       background: #F7F7F7;
-      text-align: center;
+      text-align: left;
     }
   }
 
@@ -254,6 +273,7 @@
   }
 }
 @media (max-width: 768px) {
+
   .article {
     width: 100%;
 
@@ -279,7 +299,26 @@
         padding-top: 7px;
         padding-bottom: 0;
         box-sizing: border-box;
-        text-align: center;
+        text-align: left;
+        padding-left: 2%;
+        padding-right: 1%;
+        &:nth-child(1) {
+          width: 10%;
+        }
+        &:nth-child(2) {
+          width: 10%;
+        }
+        &:nth-child(3) {
+          width: 20%;
+        }
+        &:nth-child(4) {
+          //width: 33%;
+          width: 30%;
+        }
+        &:nth-child(5) {
+          width: 30%;
+
+        }
       }
 
       & td {
@@ -291,7 +330,9 @@
         padding-bottom: 22px;
         color: #2F2F2F;
         background: #F7F7F7;
-        text-align: center;
+text-align: left;
+padding-left: 2%;
+padding-right: 1%;
       }
     }
   }

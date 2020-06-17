@@ -4,6 +4,8 @@
   padding-right: 20px;
 }
 
+
+
 .catalog-index__wrapper {
   margin: 0 auto;
   box-sizing: border-box;
@@ -23,6 +25,7 @@
   font-size: 40px;
   color: #ffffff;
   line-height: 120%;
+  margin-bottom: 28px;
 }
 
 .catalog-index ul {
@@ -39,7 +42,41 @@
 .catalog-index ul li {
   margin-bottom: 12px;
   width: 193px;
-  height: 30px;
+  min-height: 30px;
+  & .catalog-index__sublist {
+    display: none;
+    margin-left: 10px;
+    margin-top: 10px;
+
+    & li {
+      border: none;
+
+      & a {
+        font-size: 14px;
+        line-height: 17px;
+        display: block;
+        white-space: pre-wrap;
+        & span{
+white-space: pre-wrap;
+          &::after {
+            content: none;
+          }
+
+}
+      }
+    }
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  & a {
+    text-decoration: none;
+    display: block;
+    position: relative;
+            white-space: pre-wrap;
+}
 }
 
 .catalog-index__list-hidden {
@@ -51,19 +88,30 @@
   line-height: 22px;
   text-decoration: underline;
   color: #ffffff;
+  white-space: pre-wrap;
+  display: block;
+  & span {
+    white-space: pre-wrap;
+    position: relative;
+  }
 }
 
-.catalog-index ul li:first-of-type a:after,
-.catalog-index ul li:nth-of-type(11) a:after,
-.catalog-index ul li:nth-of-type(6) a:after {
-  margin-bottom: 1px;
-  margin-left: 20px;
-  display: inline-block;
+
+.catalog-index ul li a span:after {
   content: '';
-  width: 5px;
-  height: 5px;
+  width: 6px;
+  height: 6px;
   background-color: #ffffff;
   border-radius: 50%;
+  position: absolute;
+  right: -25px;
+  top: 50%;
+}
+.catalog-index ul li a.non-circle span:after {
+  content: none;
+}
+.catalog-index ul.catalog-index__mobile {
+  display: none;
 }
 @media (max-width: 1100px) {
   .catalog-index ul {
@@ -95,18 +143,41 @@
   }
 
   .catalog-index ul {
-    width: 100%;
+    width: 80%;
   }
 
   .catalog-index ul li {
     width: 160px;
-  }
 
-  .catalog-index__list-hidden {
-    display: none;
   }
 
   .catalog-index ul li a {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 700px) {
+  .catalog-index ul {
+    width: 100%;
+  }
+}
+
+@media (max-width: 560px) {
+  .catalog-index__list-hidden {
+    display: none;
+  }
+  .catalog-index ul.catalog-index__desktop {
+    display: none;
+  }
+
+  .catalog-index ul.catalog-index__mobile {
+    display: flex;
+  }
+
+
+}
+@media (max-width: 400px) {
+  .catalog-index ul li {
+    width: 120px;
   }
 }

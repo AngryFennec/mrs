@@ -118,6 +118,10 @@
       color: #FFFFFF;
     }
   }
+  & .popup__input-container {
+    display: flex;
+    position: relative;
+  }
 
   & input {
     max-width: 300px;
@@ -135,7 +139,7 @@
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-sizing: border-box;
     border-radius: 100px;
-
+    position: relative;
     &::-webkit-input-placeholder {
       color: rgba(255, 255, 255, 0.2);
     }
@@ -153,6 +157,35 @@
       border-radius: 100px;
       outline: none;
     }
+    &:valid {
+      border: 1px solid rgba(255, 255, 255, 1);
+    }
+    &:required + span {
+      position: absolute;
+      background: yellow;
+      width: 14px;
+      height: 14px;
+      background: url("../img/invalid.svg") no-repeat;
+      right: 15%;
+      top: 15px;
+    }
+    &:invalid + span {
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      background: url("../img/invalid.svg") no-repeat;
+      right: 15%;
+      top: 15px;
+    }
+    &:valid + span {
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      background: url("../img/valid.svg") no-repeat;
+      right: 15%;
+      top: 15px;
+    }
+
   }
 }
 
@@ -160,6 +193,7 @@
   max-width: 300px;
   width: 80%;
   background: #F5850A;
+  border: none;
   border-radius: 100px;
   display: block;
   text-align: center;
@@ -172,6 +206,7 @@
   /* identical to box height, or 137% */
   color: #FFFFFF;
   margin-top: 20px;
+
 }
 
 .popup__close {

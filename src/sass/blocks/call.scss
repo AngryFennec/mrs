@@ -62,6 +62,9 @@
 	&::placeholder {
 		color: #FFC585;
 	}
+	&:focus {
+		outline: none;
+	}
 }
 
 .call__btn {
@@ -119,11 +122,14 @@
 		display: none;
 	}
 
+
+
 	.call__container {
 		padding-bottom: 20px;
 	}
 
 	.call {
+
 		& h2 {
 			text-align: center;
 			padding-top: 14px;
@@ -152,5 +158,16 @@
 	.call__policy {
 		margin-top: 10px;
 		align-self: center;
+	}
+}
+
+@media (max-width: 768px) {
+	.call__wrapper {
+		&.wrapper {
+			padding: 0;
+		}
+	}
+	.call {
+		padding-bottom: 0;
 	}
 }
